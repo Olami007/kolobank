@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,5 +23,12 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+    Route::get('/clear',function(){
+        Artisan::call('cache:clear');
+        Artisan::call('route:clear');
+        Artisan::call('route:cache');
+
+    });
 
 require __DIR__.'/auth.php';
