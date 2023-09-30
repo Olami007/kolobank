@@ -24,7 +24,7 @@
 
         {{-- LOGO --}}
         <div class="max-w-7xl mx-auto p-6 lg:p-8 absolute top-0">
-            <div class="flex justify-center ">
+            <div class="flex justify-start ">
                 {{-- <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
                     <path
@@ -38,9 +38,19 @@
         </div>
 
         {{-- BODY --}}
-        <div>
-            <h1 class="text-gray-500 dark:text-gray-200 text-6xl">Welcome to Kudi Bank</h1>
-        </div>
+        <main class="w-full h-[70vh] flex flex-col justify-center items-center">
+            <div class="text-center space-y-7 p-12">
+
+                <h1 class="text-black text-5xl font-black">The most Transparent Bank Ever</h1>
+                <p class="text-black">Built for small business owners, entrepreneurs, and freelancers. No hidden fees, no hassle</p>
+                <div class="bg-white p-1 md:w-3/5 w-full flex items-center mt-4">
+                    <input type="email" placeholder="example@gmail.com" class="rounded-l px-4 py-2 w-3/5 outline-none border-none" />
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded ml-auto">Get Started</button>
+                </div>
+            </div>
+        </main>
+
+
 
         {{-- Footer --}}
         <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between absolute bottom-4">
@@ -59,7 +69,7 @@
             </div>
 
             <div class="ml-4 pl-1 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                Olami_bells
+                Olami_bells & Harmedino
             </div>
         </div>
     </div>
