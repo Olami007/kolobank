@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('lastName');  // Add new 'lastName' column
             $table->string('email')->unique();
             $table->string('phone')->unique();      // Add new 'phone' column
+            $table->string('wallet', 12, 2)->default(0);
+            $table->string('role')->default('user');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
