@@ -14,21 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('welcome');
 
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
+    ->middleware(['auth', 'verified',])
     ->name('dashboard');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-    Route::get('/clear',function(){
-        Artisan::call('cache:clear');
-        Artisan::call('route:clear');
-        Artisan::call('route:cache');
+Route::get('/clear', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('route:cache');
+});
 
-    });
-
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

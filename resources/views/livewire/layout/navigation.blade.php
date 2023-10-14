@@ -32,11 +32,19 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    {{-- <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+                        $ {{auth()->user()->wallet }}
+                    </x-nav-link> --}}
                 </div>
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate
+                    class="mr-4">
+                    $ {{auth()->user()->wallet }}
+                </x-nav-link>
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button
@@ -68,6 +76,7 @@ new class extends Component
                         </button>
                     </x-slot>
                 </x-dropdown>
+
             </div>
 
             <!-- Hamburger -->
