@@ -31,7 +31,7 @@
     </div>
 
 
-    <button class="bg-blue-500  py-2 px-4 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition-all duration-300 ease-in-out hover:bg-blue-600">Login</button>
+    <button class="bg-blue-500  py-2 px-4 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition-all duration-300 ease-in-out hover:bg-blue-600"  <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" wire:navigate>Log in</a></button>
 </div>
 {{-- sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10 --}}
   {{-- @auth
