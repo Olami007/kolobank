@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, #d47575, #0704a5);
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background: #800080;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 0%);
+}
+
+.content-container {
+    padding: 4rem;
+}
+
+.image-container {
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #800080;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
