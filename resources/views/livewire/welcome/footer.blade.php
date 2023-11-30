@@ -1,8 +1,12 @@
    {{-- Footer --}}
-   <div class=" container mx-auto">
+   <footer class="bg-black h-[30vh]">
+   <div class=" container mx-auto ">
 
 
-   <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between absolute bottom-4">
+
+</div>
+</footer>
+{{-- <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between absolute bottom-4">
     <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
         <div class="flex items-center gap-4">
             <a href="https://github.com/Olami007"
@@ -20,5 +24,4 @@
     <div class="ml-4 pl-1 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
         Olami_bells & Harmedino
     </div>
-</div>
-</div>
+</div> --}}
